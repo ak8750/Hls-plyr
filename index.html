@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <title>Films999</title>
 
- <link rel="stylesheet" href="./hide_normalize.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ak8750/Hls-plyr/hide_normalize.min.css">
 
-<link rel="stylesheet" href="./hide_plyr_logo.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ak8750/Hls-plyr/hide_plyr_logo.css">
 
-<link rel="stylesheet" href="./hide_plyr_styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ak8750/Hls-plyr/hide_plyr_styles.css">
     
   </head>
   
 <body>
- 
+
 <div class="container">
 
 	<video controls  poster="https://qqcdnpictest.mxplay.com/pic/853510bd4fa70902ccd05e4e9c24f56e/en/16x9/640x360/test_pic1616760820486.jpg"></video>
-
 </div>
 
-    <script type="text/javascript">
+
+
+ <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
-        const controls = ['rewind', 'play-large', 'play', 'fast-forward', 'progress', 'current-time', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'];
+        
        
+       const source = 'https://llvod.mxplay.com/video/b28e3738018620b42fb21ae834271322/hls/h264_high.m3u8';
+  const video = document.querySelector('video');
 
 
-        const source =
- 'https://media-content.akamaized.net/video/b28e3738018620b42fb21ae834271322/hls/h264_high.m3u8';
+const controls = ['rewind', 'play-large', 'play', 'fast-forward', 'progress', 'current-time', 'current-time', 'mute', 'volume', 'settings', 'fullscreen'];
+ 
+        
+      
+        
 
-        const video = document.querySelector('video');
-        // const player = Plyr.setup('video', {controls, captions: {active: false, update: false, language: 'auto'}});
+        
+        //const player = Plyr.setup('video', {controls, captions: {active: false, update: false, language: 'auto'}});
         const defaultOptions = {
           controls,
           captions: {
